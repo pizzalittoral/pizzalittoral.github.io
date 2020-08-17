@@ -1,0 +1,19 @@
+@media all and (max-width: 1023px) {
+  #more {
+    display: none;
+  }
+  #btn {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  #dots {
+    display: none;
+  }
+  #more {
+    display: block;
+  }
+  .up {
+    opacity: 0;
+  }
+}

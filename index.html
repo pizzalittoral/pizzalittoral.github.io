@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="dimsemenov-Magnific-Popup-2ff1692/dist/magnific-popup.css">
+    <link rel="stylesheet" href="css/lightgallery.css">
+    <link rel="stylesheet" href="css/lightslider.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__top"></div>
+        <div class="header__bottom"></div>
+    </header>
+    <main class="main">
+        <div class="conteiner">
+            <div class="main-left">
+                <div class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__list-item"><a class="item-link" href="#!">Главная</a></li>
+                        <li class="navigation__list-item"><a class="item-link" href="#!">/ Мясные компании в Москве</a></li>
+                        <li class="navigation__list-item"><a class="item-link active" href="#!">/ Преображенский МПК, ООО</a></li>
+                    </ul>
+                </div>
+                <div class="search-wrapper">
+                    <input class="search" type="text" placeholder="Поиск по компаниям">
+                    <button class="search-btn" type="submit">
+                        <img class="search-btn__img" src="img/icon/ic_search.png" alt="search img">
+                    </button>
+                </div>
+                <div class="back">
+                    <a class="back__link" href="#!"><p class="back__link-text">К каталогу компаний</p></a>
+                </div>
+                <div class="title" id="title">
+                    <div class="tooltip-block">
+                        <div class="tooltip">
+                            <img class="title__img" src="img/ic_approval.png" alt="approval img">
+                            <h2 class="tooltip__title">Подтверждённая компания</h2>
+                            <p class="tooltip__text">Реквизиты компании проверены банковским переводом.</p>
+                        </div>
+                        <img class="title__img" id="tool" src="img/ic_approval.png" alt="approval img">
+                    </div>
+                    <h2 class="title__text">Преображенский МПК, ООО</h2>
+                </div>
+                <div class="social">
+                    <div class="social-wrap">
+                        <div class="social-view"><p class="social-view__text">578 (+2)</p></div>
+                        <div class="social-comment"><a class="social-comment__link" href="#!" id="myBtn"><p class="comment__link-text">Оставить отзыв</p></a></div>
+                    </div>
+                    <div id="modalCom" class="modal-com">
+                        <div class="modal-com__top">
+                            <img class="top__img" src="img/photo.png" alt="photo img">
+                            <div class="top-wrap">
+                                <p class="top-wrap__text">Гость</p>
+                                <div class="star-group">
+                                    <img class="star-group__img" src="img/ic_star.png" alt="star img">
+                                    <img class="star-group__img" src="img/ic_star.png" alt="star img">
+                                    <img class="star-group__img" src="img/ic_star.png" alt="star img">
+                                    <img class="star-group__img" src="img/ic_star.png" alt="star img">
+                                    <img class="star-group__img" src="img/ic_star.png" alt="star img">
+                                </div>
+                            </div>
+                            <p class="top__text">Начните отзыв с выставления оценки</p>
+                        </div>
+                        <textarea class="modal-com__text" type="text"></textarea>
+                        <div class="modal-com__bottom">
+                            <div class="bottom__fotos">
+                                <label for="file-input">
+                                    <img class="add-foto__img" src="img/ic_add_photo.png" alt="add_photo img">
+                                </label>
+                                <input id="file-input" type="file" style="display: none;"/>
+                            </div>
+                            <a class="bottom-btn" href="#form" id=""><p class="bottom-btn__text">Отправить</p></a>
+                        </div>
+                    </div>
+                    <div class="hiden">
+                        <form class="modal-form" id="form">
+                            <p class="form-title" style="font-size: 12px;line-height: 20px;text-align: center;color: #424242;font-weight: bold;">Оставлять отзыв могут только авторизованные пользователи!</p><br><br>
+                            <input class="form-input" type="text" name="name" placeholder="Имя"><br><br>
+                            <input class="form-input" type="email" name="email" placeholder="Электронная почта"><br><br>
+                            <button type="submit" style="display: block; margin: auto;width: 200px;height: 40px;background: #005FAE;color: #fff;">Отправить</button>
+                        </form>
+                    </div>
+                    <a class="social-btn" href="#"><p class="social-btn__text" onClick='this.innerHTML=="Работаете в этой компании?" ? this.innerHTML="Отменить запрос в сотрудники" : this.innerHTML="Работаете в этой компании?"'>Работаете в этой компании?</p></a>
+                </div>
+                <div class="content">
+                    <div class="content-announce">
+                        <h2 class="announce__title">Последние объявления сотрудников компании</h2>
+                        <div class="announce__cap">
+                            <p class="cap-product">Объявление</p>
+                            <p class="cap-time">Время</p>
+                            <img class="cap-img" src="img/icon/ic_view-black.png" alt="view-black img">
+                            <p class="cap-name">Опубликовал</p>
+                        </div>
+                        <ul class="announce__row">
+                            <li class="row-sell">
+                                <a class="row-sell__link" href="#!">
+                                    <p class="sell__link-text">Продам</p>
+                                </a>
+                            </li>
+                            <li class="row-product">
+                                <a class="row-product__link" href="#!">
+                                    <p class="product__link-text">Желудки куриные очищенные 60 руб.</p>
+                                </a>
+                            </li>
+                            <li class="row-date">5 фев</li>
+                            <li class="row-view">155</li>
+                            <li class="row-foto">
+                                <img src="img/photo.png" alt="">
+                            </li>
+                            <li class="row-name">
+                                <a class="row-name__full" href="#!">Татьяна Лобач</a>
+                                <p class="row-name__factory">Орехово-Зуевский мясокомб...</p>
+                            </li>
+                        </ul>
+                        <ul class="announce__row">
+                            <li class="row-sell">
+                                <a class="row-sell__link" href="#!">
+                                    <p class="sell__link-text">Продам</p>
+                                </a>
+                            </li>
+                            <li class="row-product">
+                                <a class="row-product__link" href="#!">
+                                    <p class="product__link-text">ГоленьЦБ(подл) 100р, Желудки кур.очиш 60 р</p>
+                                </a>
+                            </li>
+                            <li class="row-date">27 янв</li>
+                            <li class="row-view">185</li>
+                            <li class="row-foto">
+                                <img src="img/photo.png" alt="">
+                            </li>
+                            <li class="row-name">
+                                <a class="row-name__full" href="#!">Татьяна Лобач</a>
+                                <p class="row-name__factory">Орехово-Зуевский мясокомб...</p>
+                            </li>
+                        </ul>
+                        <ul class="announce__row">
+                            <li class="row-buy">
+                                <a class="row-buy__link" href="#!">
+                                    <p class="buy__link-text">Куплю</p>
+                                </a>
+                            </li>
+                            <li class="row-product">
+                                <a class="row-product__link" href="#!">
+                                    <p class="product__link-text">Курица, Индейка, Говядина, Свинина от МК</p>
+                                </a>
+                            </li>
+                            <li class="row-date">21 апр</li>
+                            <li class="row-view">42609</li>
+                            <li class="row-foto">
+                                <img src="img/photo.png" alt="">
+                            </li>
+                            <li class="row-name">
+                                <a class="row-name__full" href="#!">Татьяна Лобач</a>
+                                <p class="row-name__factory">Орехово-Зуевский мясокомб...</p>
+                            </li>
+                        </ul>
+                        <ul class="announce__row">
+                            <li class="row-buy">
+                                <a class="row-buy__link" href="#!">
+                                    <p class="buy__link-text">Куплю</p>
+                                </a>
+                            </li>
+                            <li class="row-product">
+                                <a class="row-product__link" href="#!">
+                                    <p class="product__link-text">ГоленьЦБ(подл) 100р, Желудки кур.очиш 60 р</p>
+                                </a>
+                            </li>
+                            <li class="row-date">27 фев</li>
+                            <li class="row-view">319</li>
+                            <li class="row-foto">
+                                <img src="img/photo.png" alt="">
+                            </li>
+                            <li class="row-name">
+                                <a class="row-name__full" href="#!">Татьяна Лобач</a>
+                                <p class="row-name__factory">Орехово-Зуевский мясокомб...</p>
+                            </li>
+                        </ul>
+                        <ul class="announce__row">
+                            <li class="row-sell">
+                                <a class="row-sell__link" href="#!">
+                                    <p class="sell__link-text">Продам</p>
+                                </a>
+                            </li>
+                            <li class="row-product">
+                                <a class="row-product__link" href="#!">
+                                    <p class="product__link-text">Курица, Индейка, Говядина, Свинина от МК</p>
+                                </a>
+                            </li>
+                            <li class="row-date">7 фев</li>
+                            <li class="row-view">10072</li>
+                            <li class="row-foto">
+                                <img src="img/photo.png" alt="">
+                            </li>
+                            <li class="row-name">
+                                <a class="row-name__full" href="#!">Татьяна Лобач</a>
+                                <p class="row-name__factory">Орехово-Зуевский мясокомб...</p>
+                            </li>
+                        </ul>
+                        <ul class="announce__row">
+                            <li class="row-sell">
+                                <a class="row-sell__link" href="#!">
+                                    <p class="sell__link-text">Продам</p>
+                                </a>
+                            </li>
+                            <li class="row-product">
+                                <a class="row-product__link" href="#!">
+                                    <p class="product__link-text">Фарш куриный ММО люкс 40руб/кг</p>
+                                </a>
+                            </li>
+                            <li class="row-date">7 фев</li>
+                            <li class="row-view">300</li>
+                            <li class="row-foto">
+                                <img src="img/photo1.png" alt="">
+                            </li>
+                            <li class="row-name padding-right">
+                                <a class="row-name__full" href="#!">Виталий Пчелинцев</a>
+                                <p class="row-name__factory">ООО ОКЕАНФИШ</p>
+                            </li>
+                        </ul>
+                        <ul class="announce__row">
+                            <li class="row-sell">
+                                <a class="row-sell__link" href="#!">
+                                    <p class="sell__link-text">Продам</p>
+                                </a>
+                            </li>
+                            <li class="row-product">
+                                <a class="row-product__link" href="#!">
+                                    <p class="product__link-text">Голень ЦБ ГОСТ 75 руб/кг</p>
+                                </a>
+                            </li>
+                            <li class="row-date">7 фев</li>
+                            <li class="row-view">319</li>
+                            <li class="row-foto">
+                                <img src="img/photo1.png" alt="">
+                            </li>
+                            <li class="row-name padding-right">
+                                <a class="row-name__full" href="#!">Виталий Пчелинцев</a>
+                                <p class="row-name__factory">ООО ОКЕАНФИШ</p>
+                            </li>
+                        </ul>
+                        <div class="announce__gallery">
+                            <h2 class="gallery__title">Фото продукции</h2>
+                            <div class="gallery__fotos" id="lightgallery">
+                                <a href="img/img big/1bg.png"><img class="gallery__fotos-img" src="img/1.png"></a>
+                                <a href="img/img big/2bg.png"><img class="gallery__fotos-img" src="img/2.png"></a>
+                                <a href="img/img big/3bg.png"><img class="gallery__fotos-img" src="img/3.png"></a>
+                                <a href="img/img big/4bg.png"><img class="gallery__fotos-img" src="img/4.png"></a>
+                                <a href="img/img big/5bg.png"><img class="gallery__fotos-img" src="img/5.png"></a>
+                                <a href="img/img big/6bg.png"><img class="gallery__fotos-img" src="img/6.png"></a>
+                                <a href="img/img big/7bg.png"><img class="gallery__fotos-img" src="img/7.png"></a>
+                                <a href="img/img big/8bg.png"><img class="gallery__fotos-img" src="img/8.png"></a>
+                                <a href="img/img big/9bg.png"><img class="gallery__fotos-img" src="img/9.png"></a>
+                                <a href="img/img big/10bg.png"><img class="gallery__fotos-img" src="img/10.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-inform">
+                        <img class="logo" src="img/logo.png" alt="logo img">
+                        <div class="inform__requisites">
+                            <p class="inform__requisites-term">Название компании:<span class="inform__requisites-desc"> ООО “Преображенский Мясоперерабатывающий Комбинат”</span></p>
+                            <p class="inform__requisites-term">ОГРН (ОГРНИП):<span class="inform__requisites-desc"> 1166733069612</span></p>
+                            <p class="inform__requisites-term">ИНН:<span class="inform__requisites-desc"> 6726022894</span></p>
+                            <p class="inform__requisites-term">Страна:<span class="inform__requisites-desc"> Россия</span></p>
+                            <p class="inform__requisites-term">Регион:<span class="inform__requisites-desc"> Тверская область</span></p>
+                            <p class="inform__requisites-term">Описание:<span class="inform__requisites-desc"> Преображенский МПК - современное <br>мясоперерабатывающее предприятие в <br>Тверской области.<br>Введен в эксплуатацию в 2013 г. Основу <br>ассортимента составляют порционные и <br>мелкокусковые полуфабрикаты из охлажденной <br>свинины. Продукция мясокомбината является <br>частью вертикально-интегрированного холдинга <br>КоПИТАНИЯФ.<br> Предприятия холдинга образуют полный цикл</span><span id="dots">...</span><span id="more" class="inform__requisites-desc"> производства от выращивания зерна и <br>производства комбикормов до производства <br>свежего мяса, что позволяет снизить <br>себестоимость и гарантировать безопасность и <br>высокое качество продукции.</span></p>
+                            <a class="readmore-link" id="btn" onclick="readMore()" href="#!"><p class="readmore">Читать далее</p></a>
+                            <p class="inform__requisites-term">Виды деятольности:<br><span class="inform__requisites-desc"> 
+                                – Оборудование, упаковка<br>
+                                – Оптовая торговля<br>
+                                – Производитель готовой продукции<br>
+                                – Производитель мясного сырья<br>
+                                – Розничная торговля<br></span></p>
+                            <p class="inform__requisites-term">Виды продукции:<br><span class="inform__requisites-desc"> 
+                                – Свинина<br>
+                                – Замороженное и охлажденное мясо<br>
+                                – Мясные полуфабрикаты<br>
+                                – Колбасы, сосиски, деликатесы<br></span></p>
+                            <p class="inform__requisites-term">Товары и услуги:<span class="inform__requisites-desc"> Мясо замороженное, мясо <br>охлажденное, свинина, субпродукты</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-right">
+                <div class="advertising">
+                    <p class="advertising__text">Реклама</p>
+                </div>
+                <div class="advertising">
+                    <p class="advertising__text">Реклама</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <a href="#" class="up" id="scrollUp"><img class="up-img" src="img/ic_arrow_up.png" alt="arrow_up img"></a>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.elimore.js"></script>
+    <script src="dimsemenov-Magnific-Popup-2ff1692/dist/jquery.magnific-popup.min.js"></script>
+    <script src="js/lightgallery-all.js"></script>
+    <script src="js/lightslider.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
